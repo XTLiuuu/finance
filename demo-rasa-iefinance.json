@@ -1,0 +1,335 @@
+{
+  "rasa_nlu_data": {
+    "regex_features": [
+      {
+        "name": "greet",
+        "pattern": "hey[^\\s]*"
+      }
+    ],
+    "entity_synonyms": [
+      {
+        "value": "current",
+        "synonyms": ["today", "now", "temporary"]
+      },
+      {
+        "value": "price",
+        "synonyms": ["price", "value", "prices"]
+      },
+      {
+        "value": "history",
+        "synonyms": ["previous", "before"]
+      },
+      {
+        "value": "estimate",
+        "synonyms": ["estimate", "estimation", "valuation"]
+      }
+    ],
+    "common_examples": [
+      {
+        "text": "yes",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "yep",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "yeah",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "indeed",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "that's right",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "ok",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "great",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "right, thank you",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "correct",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "great choice",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "sounds really good",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "what's the current price of Apple stock",
+        "intent": "current_stock_price",
+        "entities": [
+          {
+          "start": 28,
+          "end": 33,
+          "value": "Apple",
+          "entity": "company"
+          }
+        ]
+      },
+      {
+        "text": "what's the current price of Amazon stock",
+        "intent": "current_stock_price",
+        "entities": [
+          {
+          "start": 28,
+          "end": 34,
+          "value": "Amazon",
+          "entity": "company"
+          }
+        ]
+      },
+      {
+        "text": "I want to know about the current stock price",
+        "intent": "current_stock_price",
+        "entities": []
+      },
+      {
+        "text": "Can I ask you about the current stock price",
+        "intent": "current_stock_price",
+        "entities": []
+      },
+      {
+        "text": "How much is the Microsoft stock",
+        "intent": "current_stock_price",
+        "entities": [
+          {
+          "start": 16,
+          "end": 25,
+          "value": "Microsoft",
+          "entity": "company"
+          }
+        ]
+      },
+      {
+        "text": "How much is the Oracle stock",
+        "intent": "current_stock_price",
+        "entities": [
+          {
+          "start": 16,
+          "end": 22,
+          "value": "Oracle",
+          "entity": "company"
+          }
+        ]
+      },
+      {
+        "text": "May I know the historical stock prices of Bank of America",
+        "intent": "historical_stock_price",
+        "entities": [
+          {
+          "start": 42,
+          "end": 57,
+          "value": "Bank of America",
+          "entity": "company"
+          }
+        ]
+      },
+      {
+        "text": "May I know the previous stock prices of Intel",
+        "intent": "historical_stock_price",
+        "entities": [
+          {
+          "start": 40,
+          "end": 46,
+          "value": "Intel",
+          "entity": "company"
+          }
+        ]
+      },
+       {
+          "text": "May I know the previous stock prices",
+          "intent": "historical_stock_price",
+          "entities": []
+       },
+      {
+          "text": "May I know the historical stock prices of LinkedIn",
+          "intent": "historical_stock_price",
+          "entities": [
+            {
+              "start": 42,
+              "end": 50,
+              "value": "LinkedIn",
+              "entity": "company"
+
+            }
+          ]
+       },
+       {
+      "text": "What is the stock fluctuation of Adidas from June 2nd to July 5th",
+      "intent": "historical_stock_price",
+      "entities": [
+        {
+        "start": 33,
+        "end": 39,
+        "value": "Adidas",
+        "entity": "company"
+        },
+        {
+          "start": 45,
+          "end": 53,
+          "value": "June 2nd",
+          "entity": "from"
+        },
+        {
+          "start": 57,
+          "end": 65,
+          "value": "June 5th",
+          "entity": "to"
+        }
+      ]
+    },
+    {
+      "text": "What is the stock fluctuation of at&t from Feb 23rd to March 6th",
+      "intent": "historical_stock_price",
+      "entities": [
+        {
+        "start": 33,
+        "end": 37,
+        "value": "at&t",
+        "entity": "company"
+        },
+        {
+          "start": 43,
+          "end": 51,
+          "value": "Feb 23rd",
+          "entity": "from"
+        },
+        {
+          "start": 55,
+          "end": 64,
+          "value": "March 6th",
+          "entity": "to"
+        }
+      ]
+    },
+    {
+      "text": "Please add Apple to my fav",
+      "intent": "add_fav",
+      "entities": [
+        {
+          "start": 11,
+          "end": 16,
+          "value": "Apple",
+          "entity": "company"
+        }
+      ]
+    },
+    {
+      "text": "Would you please add Amazon to my fav",
+      "intent": "add_fav",
+      "entities": [
+        {
+          "start": 21,
+          "end": 27,
+          "value": "Amazon",
+          "entity": "company"
+        }
+      ]
+    },
+    {
+      "text": "add Uber to my fav",
+      "intent": "add_fav",
+      "entities": [
+        {
+          "start": 4,
+          "end": 8,
+          "value": "Uber",
+          "entity": "company"
+        }
+      ]
+    },
+         {
+      "text": "add Intel to my fav",
+      "intent": "add_fav",
+      "entities": [
+        {
+          "start": 4,
+          "end": 9,
+          "value": "Intel",
+          "entity": "company"
+        }
+      ]
+    },
+         {
+      "text": "add Oracle to my fav",
+      "intent": "add_fav",
+      "entities": [
+        {
+          "start": 4,
+          "end": 10,
+          "value": "Oracle",
+          "entity": "company"
+        }
+      ]
+    },
+         {
+      "text": "add JPMorgan to my fav",
+      "intent": "add_fav",
+      "entities": [
+        {
+          "start": 4,
+          "end": 12,
+          "value": "JPMorgan",
+          "entity": "company"
+        }
+      ]
+    },
+    {
+      "text": "which company in my fav list has the highest price",
+      "intent": "check_fav",
+      "entities": []
+    },
+    {
+      "text": "which company in my fav list has the lowest price",
+      "intent": "check_fav",
+      "entities": []
+    },
+    {
+      "text": "show me the prices of all stocks in my fav",
+      "intent": "check_fav",
+      "entities": []
+    },
+    {
+      "text": "would you recommend some stocks for me",
+      "intent": "recommend_stock",
+      "entities": []
+    },
+    {
+      "text": "are there any stocks you would recommend",
+      "intent": "recommend_stock",
+      "entities": []
+    },
+    {
+      "text": "what is your favorate stock",
+      "intent": "recommend_stock",
+      "entities": []
+    }
+  ]
+}
+}
