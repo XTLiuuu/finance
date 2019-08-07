@@ -5,26 +5,32 @@ Video Demo: https://youtu.be/UMjpfmrO47U
 
 # Features
 - Current Stock Price
-  - Most Recent Price
-  - Highest Price of The Day
-  - Lowest Price of The Day
+  - Most recent price
+  - Highest price of the day
+  - Lowest price of the day
 - Financial Statements
-  - Balance Sheet
-  - Income Statement
-  - Cash Flow Statement 
+  - Balance sheet
+  - Income statement
+  - Cash flow statement 
 - History Stock Price 
-  - Stock Price at a Given Day
-  - Stock Price Fluctuation During a Period of Time
+  - Stock price at a given day
+  - Stock price fluctuation during a period of time (with a chart)
 - Fav List
-  - Add Stocks to Fav List
-  - Get the Stock with the Current Highest Price
-  - Get the Stock with the Current Lowest Price
+  - Add stocks to fav list
+  - Get the stock with the current highest price
+  - Get the stock with the current lowest price
 - Stock Recommend
-  - Recommend a Random Stock From the Database
-  - Show the Stock's Information as the User Command
+  - Recommend a random stock from the database
+  - Show the stock's information as the user command
 
 # Built With
 - Python
 - RASA_NLU
-- iexFinance api 
+- iexfinance api 
+
+# Future Plans
+- Add more training sentences
+- Integrate with wxpy 
+- Record the demo video after integrating with wxpy
+- Test with real users
 
